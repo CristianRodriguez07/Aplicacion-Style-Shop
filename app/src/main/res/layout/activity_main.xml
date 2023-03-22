@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#070707"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="406dp"
+        android:layout_height="729dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="2dp">
+
+        <TextView
+            android:id="@+id/textViewInicio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="#070707"
+            android:foregroundTint="#070E0E0E"
+            android:gravity="center_horizontal"
+            android:text="Inicio sesión "
+            android:textColor="#FDFCFC"
+            android:textSize="24sp"
+            android:textStyle="bold|italic" />
+
+        <EditText
+            android:id="@+id/editTextNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:ems="10"
+            android:hint="Nombre"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:textColor="#FDFDFCFC"
+            android:textColorHint="#FBFBFB" />
+
+        <EditText
+            android:id="@+id/editTextContraseña"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:ems="10"
+            android:hint="Contraseña"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            android:textColor="#F8F3F3"
+            android:textColorHint="#FAF7F7" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonRegistrar"
+                android:layout_width="177dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:backgroundTint="#FAF8F8"
+                android:text="Registrar"
+                android:textColor="#0B0B0B" />
+
+            <Button
+                android:id="@+id/buttonIngresar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:backgroundTint="#F9F7FA"
+                android:text="Ingresar"
+                android:textColor="#090909" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonHuella"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:backgroundTint="#FBFBFB"
+            android:text="Acceder con huella"
+            android:textColor="#0C0C0C" />
+
+        <CheckBox
+            android:id="@+id/SesionIniciada"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mantener sesión iniciada"
+            android:textColor="#F4F3F3"
+            android:textColorHint="#FDFCFC" />
+
+        <TextView
+            android:id="@+id/textViewContra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:foregroundTint="#070E0E0E"
+            android:text="¿No se acuerda de su contraseña?"
+            android:textColor="#FAF8F8"
+            android:textSize="16sp"
+            android:textStyle="bold|italic" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="#0B0A0A"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonIg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#F4F0F0"
+                android:text="IG"
+                android:textColor="#0B0B0B" />
+
+            <Button
+                android:id="@+id/buttonFC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#EFEDED"
+                android:text="Facebook"
+                android:textColor="#090909" />
+
+            <Button
+                android:id="@+id/buttonTw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#FAF6F6"
+                android:text="TW"
+                android:textColor="#090909" />
+
+            <Button
+                android:id="@+id/buttonGm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#F3EBEB"
+                android:text="Gmail"
+                android:textColor="#0C0C0C" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
